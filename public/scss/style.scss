@@ -1,0 +1,234 @@
+* {
+    margin:0;
+}
+
+body {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+/*header*/
+
+header {
+    background-image:linear-gradient(90deg, rgba(55,55,55,0.528470763305322)100%, rgba(0,212,255,1) 100%), url(../img/banner.jpg);
+    height:65vh;
+    width: 100vw;
+    background-size:cover;
+    background-position:top;
+    background-repeat:no-repeat;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+header .navigation {
+    position:fixed;
+    flex-wrap: wrap;
+    width:100vw;
+    // padding-left: 1vw;
+    // padding-right: 1vw;
+    top:0px;
+    left:0px;
+    border-bottom:solid 0.5px rgba(119, 119, 119, 0.2);
+}
+
+/*
+header .navigation nav {
+    display:flex;
+    align-items:center;
+}
+
+header .navigation ul{
+    display:none;
+    font-size:12px;
+}
+
+header .navigation li {
+    list-style-type:none;
+}
+
+header .navigation ul a {
+    color:rgba(88,89,96,255);
+    text-decoration:none;
+    font-weight:600;
+    margin-top:150px;
+    margin:0 5px;
+    font-family: 'arlonultrabold';
+}
+
+header nav:hover ul {
+    display:flex;
+}
+
+header nav:hover .menu {
+    background-image:url(../images/xmark-solid.svg);
+    transform: rotate(180deg);
+}
+
+header .navigation .menu {
+    margin:0 10px;
+    height:20px;
+    width:20px;
+    display:flex;
+    align-items:center;
+    color:rgba(88,89,96,255);
+    background-image:url(../images/bars-solid.svg);
+    background-repeat:no-repeat;
+    background-position:center;
+    transition:ease-in-out 0.7s;
+}
+
+header div {
+    color:rgb(56, 56, 56);
+    width:30%;
+}
+
+
+.liNavBar {
+    color: white;
+    margin-left: 2vw;
+    margin-right: 2vw;
+}
+
+.navigation {
+    display: flex;
+    align-items: stretch;
+    flex-wrap: wrap;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+*/
+
+ul {
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+li:hover:not(.active) {
+    background-color: #bcbec5a7;
+}
+
+.foatLeft{
+    height:40px;
+    align-items: center;
+    padding-top:35px;
+    padding-left: 35px;
+    padding-right: 35px;
+    float:left;
+}
+
+.foatRight{
+    height:40px;
+    padding-top:35px;
+    padding-left: 35px;
+    padding-right: 35px;
+    float:right;
+}
+
+img {
+    opacity: 10;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+}
+
+.largeNav{
+    display: flex;
+    width: 40vw;
+    align-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+}
+
+.buttonNavigation{
+    background-color: red;
+    background-color: rgb(176, 10, 10);
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    text-align: center;
+}
+
+h1{
+    color: aliceblue;
+    padding: 10px;
+}
+
+.navigationH3{
+    display: flex;
+    color: rgb(168, 168, 168);
+    padding: 20px;
+    padding-bottom: 40px;
+}
+
+
+@media screen and (max-width: 390px) {
+    li {
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .liNavBar{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: flex-start;
+        justify-content: space-evenly;
+        margin-left: 0vw;
+        margin-right: 0vw;
+    }
+
+    .navBar{
+        display: flex;
+        align-items: center;
+        flex-direction: column-reverse;
+        background-color: #373b46;
+        align-content: center;
+        justify-content: flex-start;
+    }
+}
+
+
+
+
+
+.textePresentation{
+    display: flex;
+    height: 32vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px black;
+}
+
+.section1texte{
+    width: 26vw;
+    height: 24vh;
+    font-size: 30px;
+    padding: 20px;
+}
+
+.sectionPTexte{
+    width: 31vw;
+    height: 30vh;
+}
+
+.sectionPara{
+    padding: 10px;
+}
+
+.section1{
+    border: solid 1px rgb(163, 4, 4);
+    height: 30vh;
+}
